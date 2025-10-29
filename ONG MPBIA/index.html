@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto MPBIA</title>
+    <meta name="description" content="Instituto MPBIA promove educação antirracista através da música e arte. Transformando vidas de crianças em escolas públicas do Brasil.">
+    <meta name="author" content="Instituto MPBIA">
+    
+    <meta property="og:title" content="Instituto MPBIA - Música, Arte e Educação Antirracista">
+    <meta property="og:description" content="Instituto MPBIA promove educação antirracista através da música e arte. Transformando vidas de crianças em escolas públicas do Brasil.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="ASSETS/logo-main.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container navbar-content">
+            <div class="logo-container">
+                <img src="ASSETS/logo-main.png" alt="Instituto MPBIA" class="logo">
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about" data-pt="Quem Somos" data-en="About Us">Quem Somos</a>
+                <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#testimonials" data-pt="Depoimentos" data-en="Testimonials">Depoimentos</a>
+                <a href="#donate" data-pt="Doe Agora" data-en="Donate Now">Doe Agora</a>
+                <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+            </div>
+            
+            <button id="language-toggle" class="language-btn">
+                <i class="fas fa-language"></i>
+                <span id="current-lang">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="mascots-container animate-fade-in">
+                    <img src="assets/mascots.png" alt="MPBIA Mascots" class="mascots">
+                </div>
+                
+                <div class="hero-text animate-fade-in-up">
+                    <h1 class="hero-title">
+                        <span class="mpbia-text">
+                            <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                        </span>
+                        <span data-pt="é mais que cultura." data-en="is more than culture.">é mais que cultura.</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="mpbia-text">
+                            <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                        </span>
+                        <span data-pt="é cura." data-en="is healing.">é cura.</span>
+                    </h2>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('donate')">
+                            <span data-pt="Doe Agora" data-en="Donate Now">Doe Agora</span>
+                        </button>
+                        <button class="btn btn-outline" onclick="scrollToSection('about')">
+                            <span data-pt="Saiba Mais" data-en="Learn More">Saiba Mais</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content animate-on-scroll">
+                <h2 class="section-title">
+                    <span data-pt="O que é a " data-en="What is ">O que é a </span>
+                    <span class="mpbia-text">
+                        <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                    </span>
+                </h2>
+                <p class="section-subtitle" data-pt="A música transforma a educação." data-en="Music transforms education.">
+                    A música transforma a educação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="where-we-are" class="where-we-are">
+        <div class="container">
+            <div class="text-center animate-on-scroll">
+                <h2 class="section-title" data-pt="POR ONDE ANDAMOS" data-en="WHERE WE'VE BEEN">POR ONDE ANDAMOS</h2>
+                <p class="section-subtitle">
+                    <span data-pt="A " data-en="">A </span>
+                    <span class="mpbia-text">
+                        <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                    </span>
+                    <span data-pt=" atua de forma itinerante e já impactou diversos estados do Brasil" 
+                          data-en=" works itinerantly and has already impacted several states in Brazil">
+                        atua de forma itinerante e já impactou diversos estados do Brasil
+                    </span>
+                </p>
+            </div>
+            
+            <div class="map-container">
+                <img src="ASSETS/brazil-map.png" alt="Brazil Map" class="brazil-map">
+                
+                <div class="map-pin" style="top: 65%; left: 75%;" data-state="rj" data-name-pt="Rio de Janeiro" data-name-en="Rio de Janeiro" data-people="25000"></div>
+                <div class="map-pin" style="top: 60%; left: 65%;" data-state="sp" data-name-pt="São Paulo" data-name-en="São Paulo" data-people="15000"></div>
+                <div class="map-pin" style="top: 85%; left: 55%;" data-state="rs" data-name-pt="Rio Grande do Sul" data-name-en="Rio Grande do Sul" data-people="5000"></div>
+                <div class="map-pin" style="top: 20%; left: 55%;" data-state="pa" data-name-pt="Pará" data-name-en="Pará" data-people="3000"></div>
+                <div class="map-pin" style="top: 40%; left: 80%;" data-state="al" data-name-pt="Alagoas" data-name-en="Alagoas" data-people="2000"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-pt="Nossos Projetos" data-en="Our Projects">Nossos Projetos</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="ASSETS/project-schools.png" alt="MPBIA nas escolas">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            <span class="mpbia-text">
+                                <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                            </span>
+                            <span data-pt=" nas escolas" data-en=" in Schools"> nas escolas</span>
+                        </h3>
+                        <p class="project-description" 
+                           data-pt="O projeto MPBIA nas escolas promove educação antirracista para crianças. Usa música, oralidade e lúdico para conscientizar e incluir. Oferece oficinas a educadores contra o racismo estrutural. Fortalece a autoestima de crianças negras, pardas e indígenas. Transforma apresentações em oficinas pedagógicas no cotidiano escolar."
+                           data-en="The MPBIA in Schools project promotes anti-racist education for children. It uses music, orality, and playfulness to raise awareness and include. It offers workshops to educators against structural racism. It strengthens the self-esteem of Black, Brown, and Indigenous children. It transforms presentations into pedagogical workshops in everyday school life.">
+                            O projeto MPBIA nas escolas promove educação antirracista para crianças. Usa música, oralidade e lúdico para conscientizar e incluir. Oferece oficinas a educadores contra o racismo estrutural. Fortalece a autoestima de crianças negras, pardas e indígenas. Transforma apresentações em oficinas pedagógicas no cotidiano escolar.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="ASSETS/project-show.png" alt="Show da MPBIA">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-pt="Show da MPBIA" data-en="MPBIA Show">Show da MPBIA</h3>
+                        <p class="project-description"
+                           data-pt="O super show da MPBIA foi no Sesc São João. Fez parte do projeto Consciências, de educação antirracista. Contou com alunos de escolas públicas. Teve ótima receptividade do público. Interessados podem entrar em contato para palestras ou shows."
+                           data-en="The MPBIA super show was at Sesc São João. It was part of the Consciências project for anti-racist education. It featured students from public schools. It had great public reception. Interested parties can contact us for lectures or shows.">
+                            O super show da MPBIA foi no Sesc São João. Fez parte do projeto Consciências, de educação antirracista. Contou com alunos de escolas públicas. Teve ótima receptividade do público. Interessados podem entrar em contato para palestras ou shows.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="ASSETS/project-education.png" alt="Educação antirracista através da Arte">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" 
+                            data-pt="Educação antirracista através da Arte" 
+                            data-en="Anti-racist Education through Art">
+                            Educação antirracista através da Arte
+                        </h3>
+                        <p class="project-description"
+                           data-pt="A educação antirracista busca combater preconceitos e desigualdades raciais. Através da arte, como música, teatro e pintura, torna-se mais acessível e envolvente. Ela promove diálogo e reflexão sobre discriminação e estereótipos. Ajuda a reconhecer injustiças históricas de forma sensível. Contribui para uma sociedade mais consciente e inclusiva."
+                           data-en="Anti-racist education seeks to combat racial prejudice and inequality. Through art, such as music, theater, and painting, it becomes more accessible and engaging. It promotes dialogue and reflection on discrimination and stereotypes. It helps recognize historical injustices sensitively. It contributes to a more conscious and inclusive society.">
+                            A educação antirracista busca combater preconceitos e desigualdades raciais. Através da arte, como música, teatro e pintura, torna-se mais acessível e envolvente. Ela promove diálogo e reflexão sobre discriminação e estereótipos. Ajuda a reconhecer injustiças históricas de forma sensível. Contribui para uma sociedade mais consciente e inclusiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 class="section-title" data-pt="Nosso Impacto" data-en="Our Impact">Nosso Impacto</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-stat animate-on-scroll">
+                    <div class="impact-number">+<span class="counter" data-target="250">0</span></div>
+                    <p class="impact-label" data-pt="escolas públicas beneficiadas" data-en="public schools benefited">
+                        escolas públicas beneficiadas
+                    </p>
+                </div>
+                
+                <div class="impact-stat animate-on-scroll">
+                    <div class="impact-number">+<span class="counter" data-target="50000">0</span></div>
+                    <p class="impact-label" data-pt="crianças impactadas" data-en="children impacted">
+                        crianças impactadas
+                    </p>
+                </div>
+                
+                <div class="impact-stat animate-on-scroll">
+                    <div class="impact-number">+<span class="counter" data-target="4">0</span></div>
+                    <p class="impact-label" data-pt="estados ajudados no Brasil" data-en="states helped in Brazil">
+                        estados ajudados no Brasil
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-pt="Depoimentos" data-en="Testimonials">Depoimentos</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/OcEhXIaAtf4" 
+                                title="Cristina Centeno" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Cristina Centeno</h3>
+                        <p data-pt="Professora da EMEF Jose Loreiro Da Silva" 
+                           data-en="Teacher at EMEF Jose Loreiro Da Silva">
+                            Professora da EMEF Jose Loreiro Da Silva
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Vla7DI7WMyo" 
+                                title="Marcela" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Marcela</h3>
+                        <p data-pt="Professora do Sei Jardim Da Cum" 
+                           data-en="Teacher at Sei Jardim Da Cum">
+                            Professora do Sei Jardim Da Cum
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/LQtfd_2rOO4" 
+                                title="Simone Ricco" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Simone Ricco</h3>
+                        <p data-pt="Mestra em literaturas africanas" 
+                           data-en="Master in African literatures">
+                            Mestra em literaturas africanas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="donate-content">
+                <div class="donate-header animate-on-scroll">
+                    <h2 class="section-title">
+                        <span data-pt="Ajude a " data-en="Help ">Ajude a </span>
+                        <span class="mpbia-text">
+                            <span class="m">M</span><span class="p">P</span><span class="b">B</span><span class="i">I</span><span class="a">A</span>
+                        </span>
+                        <span data-pt=" a levar música, arte e educação antirracista para mais crianças" 
+                              data-en=" bring music, art, and anti-racist education to more children">
+                            a levar música, arte e educação antirracista para mais crianças
+                        </span>
+                    </h2>
+                    <p class="section-subtitle" 
+                       data-pt="Com sua contribuição, podemos transformar vidas, fortalecer a autoestima, promover inclusão e ampliar o acesso à cultura e ao conhecimento. Junte-se a nós nessa missão e seja parte da mudança!"
+                       data-en="With your contribution, we can transform lives, strengthen self-esteem, promote inclusion, and expand access to culture and knowledge. Join us in this mission and be part of the change!">
+                        Com sua contribuição, podemos transformar vidas, fortalecer a autoestima, promover inclusão e ampliar o acesso à cultura e ao conhecimento. Junte-se a nós nessa missão e seja parte da mudança!
+                    </p>
+                </div>
+                
+                <div class="payment-card animate-on-scroll">
+                    <h3 class="card-title" data-pt="Informações de Pagamento" data-en="Payment Information">
+                        Informações de Pagamento
+                    </h3>
+                    
+                    <div class="payment-section">
+                        <p class="payment-label" data-pt="Chave PIX" data-en="PIX Key">Chave PIX:</p>
+                        <div class="payment-value">
+                            <code>institutompbia@gmail.com</code>
+                            <button class="copy-btn" onclick="copyToClipboard('institutompbia@gmail.com', this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-section">
+                        <p class="payment-label" data-pt="Conta do Instituto MPBIA na Cora (403)" 
+                           data-en="Instituto MPBIA Account at Cora (403)">
+                            Conta do Instituto MPBIA na Cora (403)
+                        </p>
+                        <div class="payment-details">
+                            <div class="payment-value">
+                                <strong data-pt="Agência" data-en="Agency">Agência:</strong> 0001
+                                <button class="copy-btn" onclick="copyToClipboard('0001', this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="payment-value">
+                                <strong data-pt="Conta" data-en="Account">Conta:</strong> 6366701-2
+                                <button class="copy-btn" onclick="copyToClipboard('6366701-2', this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="payment-value">
+                                <strong data-pt="CNPJ" data-en="Tax ID">CNPJ:</strong> 61.970.304.0001-76
+                                <button class="copy-btn" onclick="copyToClipboard('61.970.304.0001-76', this)">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="idea-card animate-on-scroll">
+                    <h3 class="card-title" data-pt="Tem uma ideia para nosso próximo projeto?" 
+                        data-en="Have an idea for our next project?">
+                        Tem uma ideia para nosso próximo projeto?
+                    </h3>
+                    
+                    <form id="idea-form" class="idea-form">
+                        <input type="text" id="name" placeholder="Nome" required 
+                               data-placeholder-pt="Nome" data-placeholder-en="Name">
+                        <input type="text" id="city" placeholder="Cidade" required
+                               data-placeholder-pt="Cidade" data-placeholder-en="City">
+                        <textarea id="idea" rows="5" placeholder="Compartilhe sua ideia aqui..." required
+                                  data-placeholder-pt="Compartilhe sua ideia aqui..." 
+                                  data-placeholder-en="Share your idea here..."></textarea>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-pt="Enviar via WhatsApp" data-en="Send via WhatsApp">Enviar via WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="ASSETS/logo-main.png" alt="Instituto MPBIA" class="footer-logo">
+                
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@mpbia" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5521988793046&text=Ol%C3%A1+MPBIA%21" 
+                       target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mpbianasescolas/" 
+                       target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-text">
+                    © <a href="https://caiodiniz.dev.br" target="_blank" rel="noopener noreferrer">Caio Diniz</a> | 
+                    Instituto MPBIA | Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
